@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -38,8 +37,8 @@ func MyPow(x float64, n int) float64 {
 	}
 }
 
-func main() {
-	fmt.Println("MyPow(-1, 2): ", MyPow(-1, 2))
-	fmt.Println("MyPow(-1, 5): ", MyPow(-1, 5))
-	fmt.Print("SOLVED!")
-}
+// func main() {
+// 	fmt.Println("MyPow(-1, 2): ", MyPow(-1, 2))
+// 	fmt.Println("MyPow(-1, 5): ", MyPow(-1, 5))
+// 	fmt.Print("SOLVED!")
+// }
