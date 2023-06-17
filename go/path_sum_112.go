@@ -11,18 +11,3 @@ type TreeNode struct {
 func hasPathSum(root *TreeNode, targetSum int) bool {
 	return false
 }
-
-func buildTree(nodes []int) *TreeNode {
-	var root TreeNode
-	for _, n := range nodes {
-		if n != NULL_NODE {
-			root.Val = n
-			recur(root.Left)
-			recur(root.Right)
-		}
-	}
-
-	return &root
-}
-
-func recur(n *TreeNode)
