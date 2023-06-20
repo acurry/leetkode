@@ -1,5 +1,6 @@
 package main
 
+// 118
 func generatePascalsTriangle(numRows int) [][]int {
 	rows := [][]int{}
 
@@ -12,6 +13,21 @@ func generatePascalsTriangle(numRows int) [][]int {
 	}
 
 	return rows
+}
+
+// 119
+func getPascalTriangleRow(rowIndex int) []int {
+	rows := [][]int{}
+
+	for i := 0; i < rowIndex+1; i++ {
+		row := []int{}
+		for j := 0; j < i+1; j++ {
+			row = append(row, binomCoeff(i, j))
+		}
+		rows = append(rows, row)
+	}
+
+	return rows[len(rows)-1]
 }
 
 /*
