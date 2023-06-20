@@ -9,8 +9,6 @@ package main
  * }
  */
 
-var queue [][]int
-
 func IsSameTree(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {
 		return true
