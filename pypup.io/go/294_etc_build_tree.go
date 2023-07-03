@@ -204,3 +204,16 @@ func max(a, b, c int) int {
 	sort.Ints(i)
 	return i[len(i)-1]
 }
+
+// https://leetcode.com/problems/invert-binary-tree/submissions/984726661/
+func invertTree(root *TreeNode) *TreeNode {
+	if root == nil {
+		return nil
+	} else {
+		return &TreeNode{
+			Val:   root.Val,
+			Left:  invertTree(root.Right),
+			Right: invertTree(root.Left),
+		}
+	}
+}
